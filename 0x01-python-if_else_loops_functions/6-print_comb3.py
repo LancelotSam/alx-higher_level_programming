@@ -5,4 +5,3 @@ def comb(L):
             if (digit!=digit1):
                 print("{}{}".format"{digit}{digit1}", end=', ')
 comb(range(10))
-print()
