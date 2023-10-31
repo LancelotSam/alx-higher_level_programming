@@ -65,7 +65,7 @@ class Rectangle:
         my_rect = []
         for i in range(sel.__height):
             [my_rect.append('#') for j in range(self.__width)]
-            if i !+ self.__height - 1:
+            if i != self.__height - 1:
                 rect.append("\n")
         return ("".joint(my.rect))
 
@@ -79,5 +79,5 @@ class Rectangle:
 
     def __del__(self):
         """Prints a message when an instnace of triangle is deleted"""
-        type(self).number_os_instances -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
