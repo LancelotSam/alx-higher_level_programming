@@ -3,12 +3,12 @@
 
 
 class Rectangle:
-    """Represent a rectangle class."""
+    """Represent a Rectangle class"""
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle class."""
+        """Initialize a new Rectangle class"""
         type(self).number_of_instances += 1
         self.width = width
         self.height = height
@@ -20,6 +20,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
+        """width setter"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -33,6 +34,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
+        """height setter"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -59,6 +61,11 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return (rect_1)
         return (rect_2)
+
+    @classmethod
+    def square(cls, size=0):
+        """Return a new Rectangle with width and height equal to size."""
+        return (cls(size, size))
 
     def __str__(self):
         """Return the printable representation of the Rectangle.

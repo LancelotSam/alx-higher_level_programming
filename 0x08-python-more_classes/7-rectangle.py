@@ -3,13 +3,7 @@
 
 
 class Rectangle:
-    """Represent a rectangle.
-
-    Attributes:
-        number_of_instances (int): The number of Rectangle instances.
-        print_symbol (any): The symbol used for string representation.
-    """
-
+    """Represent a rectangle."""
     number_of_instances = 0
     print_symbol = "#"
 
@@ -31,6 +25,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
+        """width setter"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -44,6 +39,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
+        """height setter"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
