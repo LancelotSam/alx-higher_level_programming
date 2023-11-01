@@ -3,35 +3,36 @@
 
 
 class Square:
-
+    """class Square"""
     def __init__(self, size=0, position=(0, 0)):
+        """initializes Square"""
         self.__size = size
         self.__position = position
 
     @property
     def size(self):
         """gets the size"""
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
         """sets the size"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
 
     def area(self):
         """gets the area and returns it"""
-        return self.__size ** 2
+        return (self.__size ** 2)
 
     @property
     def position(self):
         """
         retrieves the position"""
-        return self.__position
+        return (self.__position)
 
     @position.setter
     def position(self, value):
