@@ -68,5 +68,5 @@ class Rectangle:
         return (my_rect)
 
     def __del__(self):
-        """Prints a message when an instnace of triangle is deleted"""
-        print("Bye rectangle...")
+        """Print a message when an instancce of Rectangle is deleted"""
+        print("Bye Rectangle...")
