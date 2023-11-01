@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-""" Area and Perimeter of class Rectangle"""
+"""class Rectangle"""
 
 
 class Rectangle:
     def __init__(self, width=0, height=0):
-        """ Initializes the Rectangle
-
-        Args:
-            width(int): the width of the rectangle
-            height(int): the height of the rectangle
-            """
+        """ Initializes the Rectangle class"""
         self.width = width
         self.height = height
 
@@ -25,6 +20,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
+        """width setter"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -33,6 +29,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
+        """height setter"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
